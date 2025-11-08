@@ -111,7 +111,7 @@ function Home() {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-8">
                     <h1 className="text-2xl font-bold text-primary">
-                        Todo
+                        To-do
                     </h1>
                     <Button variant="ghost" size="icon" className="rounded-full">
                         <ModeToggle />
@@ -143,7 +143,7 @@ function Home() {
                         onClick={() => setModalOpen(true)}
                         className=" bg-primary hover:bg-primary/90"
                     >
-                        <Plus className="h-5 w-5" /> <span>Add Todo</span>
+                        <Plus className="h-5 w-5" /> <span>Add To-do</span>
                     </Button>
                 </div>
 
