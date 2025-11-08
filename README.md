@@ -1,4 +1,4 @@
-# Muzukuru Todo App
+# Todo App
 
 A modern, responsive todo application built with React and TypeScript. Manage your daily tasks with style and efficiency.
 
@@ -28,8 +28,8 @@ A modern, responsive todo application built with React and TypeScript. Manage yo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/CMShongera/Muzukuru-Todo.git
-   cd muzukuru-todo-app
+   git clone https://github.com/CMShongera/Todo-App.git
+   cd todo-app
    ```
 
 2. **Install dependencies:**
