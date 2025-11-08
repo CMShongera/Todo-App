@@ -2,6 +2,10 @@
 
 A modern, responsive todo application built with React and TypeScript. Manage your daily tasks with style and efficiency.
 
+## Live
+
+Try the live demo: https://shonaprincetechnologies-todo-app.vercel.app/
+
 ## ✨ Features
 
 - ✅ **Add, edit, and delete tasks** - Complete task management
