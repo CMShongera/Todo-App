@@ -6,7 +6,7 @@ import Particles from "./components/Particles"
 function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <div className="min-h-screen min-w-screen bg-background px-4 sm:px-6 py-6 relative font-sans">
+      <div className="min-h-screen min-w-screen bg-background px-4 sm:px-6 py-6 relative font-sans overflow-hidden">
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
           <Particles
             particleColors={['#6366f1', '#666666', '#10b981', '#f59e0b']}
