@@ -22,8 +22,8 @@ function Home() {
     const [selectedTodo, setSelectedTodo] = useState<Todo | null>(null)
     const [showConfetti, setShowConfetti] = useState(false)
 
-    const completedCount = todos.filter((todo) => todo.completed).length
-    const totalCount = todos.length
+    const [totalCount, setTotalCount] = useState(0)
+    const [completedCount, setCompletedCount] = useState(0)
 
     const simulateNetworkDelay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -33,6 +33,8 @@ function Home() {
             setLoading(true)
             const fetchedTodos = await fetchTodos()
             setTodos(fetchedTodos)
+            setTotalCount(todos.length)
+            setCompletedCount(todos.filter((todo) => todo.completed).length)
         } catch {
             toast.error("Failed to load todos.")
         } finally {
@@ -42,6 +44,7 @@ function Home() {
 
     useEffect(() => {
         simulateNetworkDelay(2000).then(loadTodos)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const addTodo = async (title: string, description: string) => {
