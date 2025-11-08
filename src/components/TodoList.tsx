@@ -28,7 +28,7 @@ const TodoList = ({ todos, toggleTodo, handleEditClick, handleAddClick, loading,
             await new Promise(resolve => setTimeout(resolve, 3000)) // 10s delay
             await deleteTodo(id)
             toast.error("Todo deleted successfully.")
-            refetchTodos() // refresh
+            await refetchTodos() // refresh
         } catch {
             toast.error("Failed to delete todo.")
         } finally {

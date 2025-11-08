@@ -2,7 +2,7 @@ import mockTodos from "../data/mockData";
 
 
 export const fetchTodos = async () => {
-    return mockTodos;
+    return [...mockTodos]
 };
 
 export const createTodo = async (title: string, description: string) => {
