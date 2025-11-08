@@ -16,6 +16,7 @@ Try the live demo: https://shonaprincetechnologies-todo-app.vercel.app/
 - 💾 **Mock API integration** - Simulates real backend interactions
 - ⚡ **Loading states** - Smooth user experience with loading indicators
 - 🚨 **Error handling** - Graceful error management and retry functionality
+- 📱 **Progressive Web App (PWA)** - Install on any device
 
 ## 🚀 Tech Stack
 
@@ -113,3 +114,5 @@ Click the theme toggle button in the top right to switch between light and dark 
 ### Themes
 
 The app supports light, dark, and system themes. Themes are managed using CSS variables and can be customized in `styles/globals.css`.
+
+
